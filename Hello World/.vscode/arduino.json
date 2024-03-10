@@ -1,0 +1,4 @@
+{
+    "sketch": "Hello World/sketch_helloWorld.ino",
+    "board": "arduino:avr:uno"
+}
