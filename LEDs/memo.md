@@ -39,3 +39,6 @@ LEDs (Light Emitting Diodes) exemplify the practical use of semiconductors. They
 
 ![image](./IMG_2475.jpg)
 
+## Breadboard reference
+
+![image](image.png)
