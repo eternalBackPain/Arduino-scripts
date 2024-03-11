@@ -1,12 +1,54 @@
+// Making a SOS using morse code
+
+int redLED = 13;
+int quickMorse = 250;
+int slowMorse = 700;
+
+void letterS()
+{
+    digitalWrite(redLED, HIGH);
+    delay(quickMorse);
+    digitalWrite(redLED, LOW);
+    delay(quickMorse);
+
+    digitalWrite(redLED, HIGH);
+    delay(quickMorse);
+    digitalWrite(redLED, LOW);
+    delay(quickMorse);
+
+    digitalWrite(redLED, HIGH);
+    delay(quickMorse);
+    digitalWrite(redLED, LOW);
+    delay(quickMorse);
+}
+
+void letterO()
+{
+    digitalWrite(redLED, HIGH);
+    delay(slowMorse);
+    digitalWrite(redLED, LOW);
+    delay(slowMorse);
+
+    digitalWrite(redLED, HIGH);
+    delay(slowMorse);
+    digitalWrite(redLED, LOW);
+    delay(slowMorse);
+
+    digitalWrite(redLED, HIGH);
+    delay(slowMorse);
+    digitalWrite(redLED, LOW);
+    delay(slowMorse);
+}
+
 void setup()
 {
-	pinMode(13, OUTPUT); 
+	pinMode(redLED, OUTPUT); 
 }
 
 void loop()
 {
-    digitalWrite(13, HIGH);
-    delay(200);
-    digitalWrite(13, LOW);
-    delay(200);
+    letterS();
+    letterO();
+    letterS();
+    delay(2000);
 }
